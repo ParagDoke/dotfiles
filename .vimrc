@@ -4,7 +4,7 @@ set modeline background=dark hlsearch expandtab path=.,**
 autocmd VimEnter * if &diff | execute 'windo set wrap' | execute 'windo set syntax=off' | endif
 
 " Set up navigation aids when focus shifts to a window
-autocmd WinEnter * set number relativenumber cursorline cursorcolumn
+autocmd WinEnter,BufEnter * set number relativenumber cursorline cursorcolumn
 " Switch off some navigation aids when focus goes off a window
 autocmd WinLeave * set norelativenumber nocursorline nocursorcolumn
 
