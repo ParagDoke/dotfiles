@@ -15,7 +15,7 @@ highlight DiffChange ctermfg=Black ctermbg=Cyan
 highlight DiffText ctermfg=Black ctermbg=Yellow
 
 " Use a dark blue vertical line for crosshair
-highlight CursorColumn ctermbg=DarkBlue
+highlight CursorColumn ctermbg=DarkBlue ctermfg=White
 
 " Avoid losing visual selection after left, right shift
 vnoremap < <gv
