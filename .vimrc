@@ -1,12 +1,12 @@
 set modeline background=dark hlsearch expandtab path=.,**
 
-" If vim is running in diffmode, switch off all syntax and wrap text
-autocmd VimEnter * if &diff | execute 'windo set wrap' | execute 'windo set syntax=off' | endif
-
 " Set up navigation aids when focus shifts to a window
 autocmd WinEnter,BufEnter * set number relativenumber cursorline cursorcolumn
 " Switch off some navigation aids when focus goes off a window
 autocmd WinLeave * set norelativenumber nocursorline nocursorcolumn
+
+" If vim is running in diffmode, switch off all syntax and wrap text
+autocmd VimEnter * if &diff | execute 'windo set wrap' | execute 'windo set syntax=off' | endif
 
 " Set up colors for diff
 highlight DiffAdd ctermfg=Black ctermbg=LightGreen
