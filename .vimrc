@@ -1,9 +1,13 @@
-set modeline background=dark hlsearch expandtab path=.,**
+set modeline background=dark hlsearch ignorecase tabstop=4 expandtab shiftwidth=4 path=.,**
 
 " Set up navigation aids when focus shifts to a window
 autocmd WinEnter,BufEnter * set number relativenumber cursorline cursorcolumn
 " Switch off some navigation aids when focus goes off a window
 autocmd WinLeave * set norelativenumber nocursorline nocursorcolumn
+
+autocmd FileType python set colorcolumn=80
+autocmd FileType make set noexpandtab
+autocmd FileType yaml set tabstop=2 shiftwidth=2
 
 " If vim is running in diffmode, switch off all syntax and wrap text
 autocmd VimEnter * if &diff | execute 'windo set wrap' | execute 'windo set syntax=off' | endif
