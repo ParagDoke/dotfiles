@@ -1,4 +1,5 @@
 set modeline showcmd background=dark hlsearch ignorecase tabstop=4 expandtab shiftwidth=4 path=.,**
+syntax on
 
 " Set up navigation aids when focus shifts to a window
 autocmd WinEnter,BufEnter * set number relativenumber cursorline cursorcolumn
