@@ -1,4 +1,4 @@
-set modeline showcmd background=dark hlsearch ignorecase tabstop=4 expandtab shiftwidth=4 path=.,**
+set modeline showcmd background=dark hlsearch ignorecase tabstop=4 expandtab shiftwidth=4 path=.,** mouse= ttymouse=
 syntax on
 
 " Set up navigation aids when focus shifts to a window
@@ -28,5 +28,5 @@ highlight DiffText ctermfg=Black ctermbg=Yellow
 vnoremap < <gv
 vnoremap > >gv
 
-" Sample key mapping
-" map <F5> /<!--<Enter>O<Esc>2j
+" Sample key mapping to remove trailing whitespace https://stackoverflow.com/a/356130
+" map <F5> :%s/\s\+$//e
