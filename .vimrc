@@ -15,6 +15,10 @@ autocmd FileType make set noexpandtab
 autocmd FileType yaml set tabstop=2 shiftwidth=2
 autocmd FileType gitcommit set colorcolumn=50,80
 
+" red bg for trailing whitespace
+highlight ExtraWhitespace ctermbg=red
+autocmd VimEnter * match ExtraWhitespace /\s\+$/
+
 " If vim is running in diffmode, switch off all syntax and wrap text
 autocmd VimEnter * if &diff | execute 'windo set wrap' | execute 'windo set syntax=off' | endif
 
