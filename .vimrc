@@ -13,7 +13,7 @@ autocmd WinLeave * set norelativenumber nocursorline nocursorcolumn
 autocmd FileType python set colorcolumn=80
 autocmd FileType make set noexpandtab
 autocmd FileType yaml set tabstop=2 shiftwidth=2
-autocmd FileType gitcommit set colorcolumn=50,80
+autocmd FileType gitcommit set colorcolumn=50,72
 
 " red bg for trailing whitespace
 highlight ExtraWhitespace ctermbg=red
