@@ -13,7 +13,7 @@ autocmd WinLeave * set norelativenumber nocursorline nocursorcolumn
 autocmd FileType python set colorcolumn=80
 autocmd FileType make set noexpandtab
 autocmd FileType yaml set tabstop=2 shiftwidth=2
-autocmd FileType gitcommit set colorcolumn=50,72
+autocmd FileType gitcommit set colorcolumn=50,72 tabstop=2 shiftwidth=2
 
 " red bg for trailing whitespace
 highlight ExtraWhitespace ctermbg=red
@@ -33,4 +33,4 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Sample key mapping to remove trailing whitespace https://stackoverflow.com/a/356130
-" map <F5> :%s/\s\+$//e
+map <F5> :%s/\s\+$//e
