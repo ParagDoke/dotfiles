@@ -7,4 +7,7 @@ done
 for f in .bashrc; do
     curl "https://raw.githubusercontent.com/ParagDoke/dotfiles/master/${f}" >> ${f}
 done
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
+git config --global core.pager off
 echo "Finished $(basename $0)"
